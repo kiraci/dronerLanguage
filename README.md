@@ -1,1 +1,4 @@
-# dronerLanguage
+# Droner Language
+
+
+We have created a new language with its parser for drones which have a gyroscope that detects the inclination of the drone, a barometer for measuring altitude and a thermometer that measures changes in temperature, an acceleration sensor, a video camera that can be turned on and off, or it can be used to take pictures. We assume that drones can be connected to the base computer through wi-fi and a program can be written in Droner language in the base computer. We have designed it to be readable and writable language. Also, there are some predefined functions that operate to read the inclination of the drone, read the altitude, read the temperature, read the acceleration, turn on/off video camera, take pictures with video camera, read current timestamp from timer, connect to the base computer through wi-fi. There is no interpreter or compiler for this language. A test program is provided.
