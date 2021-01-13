@@ -1,0 +1,244 @@
+class >DRONE< {
+
+#properties
+
+number time;
+
+boolean cameraControl;
+
+number height;
+
+#constructor
+
+	>DRONE< (number timeStamp, boolean cameraCont) {
+
+		time <- timeStamp;
+
+		cameraControl <- cameraCont;
+
+		height <- 0;
+
+	}
+
+
+
+#primitive functions
+
+	number acceleration;
+
+	droner real readAcceleration () {
+
+		acceleration <- 5;
+
+		return acceleration;
+
+	}
+
+	droner none camera (boolean onOFF) {
+		boolean isOn;
+
+		if (onoFF) then {
+
+			isOn <- true;
+
+		}elseDo{
+
+			isOn <- false;
+
+		}
+
+	}
+
+	droner number getTimeStamp (){
+
+		timestamp <- 432534;
+
+		return timeStamp;
+
+	}
+
+	droner none takePhoto (boolean yesNo, number noOfPhotos){
+		boolean picture;
+
+		if (yesNo) then {
+
+			 picture <- true;
+
+		}
+
+		elseDo {
+
+
+			picture <- false;
+
+		}
+
+	}
+
+
+	droner boolean connectComputer (number ipAddress) {
+
+		number computerIP;
+
+		computerIP <- 51;
+
+		boolean connect <- true;
+
+		if (computerIP == ipAddress) then {
+
+			connect <- true;
+
+		}elseDo{
+
+			connect <- false;
+		}
+		return connect;
+
+	}
+
+	droner real readInclination () {
+
+		return 2.4;
+
+	}
+
+	droner real readAltitude () {
+
+		number altitude <- 3.5;
+		return altitude;
+
+	}
+
+	droner real readTemperature () {
+
+		celicius <- 23.4;
+		return celicius;
+
+	}
+
+# Functions
+
+	func number getID () {
+
+		result <- 5;
+		return result;
+
+	}
+
+	func boolean isCharged(){
+
+		return true;
+
+	}
+
+	func none moveUp(){
+		height <- height + 1;
+	}
+
+}
+
+launch () {
+
+#variable declaration
+
+	number time <- 5 + 8;
+
+	number x <- 0;	
+
+	boolean cameraCont ;
+
+	false -> cameraCont ;
+
+	number noOfPhotos;
+
+#class instantiated with calling constructor
+
+	>DRONE< myDrone(time, cameraCont);
+
+#input statements
+
+	droner.in (noOfPhotos);
+
+	droner.in(real height);
+	
+	droner.in(real a,"Desktop/input.txt");
+
+#do-while loop
+
+	do {
+
+		number a <- call:getID();
+		call:myDrone.moveUp();
+
+	} while ( x > 5 )
+
+#while loop + logical expressions
+
+	while (!a || (x && y) || z) {
+
+		x <- 5 + 5;
+
+	}
+
+#if statement
+
+	if(a && b) then {
+		x <- 5;
+	}
+
+#output statements
+
+	droner.out(7 + 7);
+	droner.out(a * 7 + e / 2);
+	droner.out( a + d * e - [a + c]);
+	droner.out (timeDrone);
+
+	while (call:myDrone.getID() - x < 5 ) {
+		x <- x + 2 ;
+		droner.out("yes");
+		droner.out(5);
+		droner.out(5.5);
+		droner.out(true);
+		droner.out(droner.readInclination());
+	}
+
+#conditional statements
+
+	if (x >= 4.5) then {
+		droner.out("YES");
+		droner.out('Y');
+		droner.out('y');
+		droner.out('1');
+	}
+
+	if((time > x) || !(x < 10)) then {
+		
+		droner.out(call:getID());
+	}
+	
+	if(([time + x] > 10) || !cameraCont) then {
+		
+		#if-elseDo statment
+
+		if(droner.readTemperature() > 45) then {
+			droner.out("Temperature more than 45C");
+		}
+		elseDo {
+
+			droner.out("Temperature less than 45C");
+
+		}
+	
+	}
+
+#for loop
+
+	for(number i <- 0: i < 10: i <- i + 1){
+		droner.out("droner");
+	}
+
+#primitive function call
+	
+	droner.readAltitude();
+	
+}
